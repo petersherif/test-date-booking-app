@@ -1,0 +1,16 @@
+.DismissBtn {
+  position: absolute;
+  right: 16px;
+  top: 8px;
+  background: none;
+  border: none;
+  font-size: 30px;
+  line-height: 30px;
+  color: #757575;
+}
+
+.Left {
+  composes: DismissBtn;
+  right: auto;
+  left: 16px;
+}

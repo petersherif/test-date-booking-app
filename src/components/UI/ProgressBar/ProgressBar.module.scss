@@ -1,0 +1,35 @@
+@import '../../../sass/variables';
+
+.ProgressBar {
+  width: 100%;
+  height: 16px;
+  position: relative;
+  margin: 4px 0;
+  border-radius: $border-radius;
+  overflow: hidden;
+
+  .Bar,
+  .Progress,
+  .Title {
+    position: absolute;
+  }
+
+  .Bar {
+    height: 100%;
+    width: 100%;
+    background: rgba($bg-primary, .35);
+  }
+
+  .Progress {
+    height: 100%;
+    background: mix(white, $bg-primary, 15%);
+  }
+
+  .Title {
+    color: $text-light;
+    font-size: 10px;
+    transform: translateX(-50%);
+    left: 50%;
+    text-shadow: 0 0 3px $bg-dark;
+  }
+}

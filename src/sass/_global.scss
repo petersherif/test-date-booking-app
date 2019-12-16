@@ -1,0 +1,105 @@
+body {
+  color: $text-body
+}
+
+.btn {
+  border-radius: $border-radius;
+  transition: .2s ease-in-out
+
+  &-sm {
+    font-size: 12px
+  }
+}
+
+.invalid-feedback,
+.valid-feedback {
+  background: $bg-light;
+  padding: 4px 0;
+}
+
+.modal-content {
+  text-align: center;
+  border-radius: $border-radius;
+
+  .modal-header {
+    border-bottom: 0;
+    padding: 0 8px 0 16px;
+
+    .close {
+      font-size: 2.3rem;
+      font-weight: 300;
+      color: #707070;
+      opacity: 1;
+    }
+  }
+
+  .modal-body {
+    padding-top: 0;
+
+    h4 {
+      font-size: 20px;
+      margin-bottom: 50px;
+    }
+  }
+
+  .modal-footer {
+    justify-content: center;
+    border-top: 0;
+    padding: 50px 24px 24px
+  }
+}
+
+.error-msg {
+  background: $bg-light;
+  color: $text-danger;
+  margin: 8px 0;
+  padding: 3px 5px;
+}
+
+.nav-tabs {
+  .nav-item {
+    border-bottom: 0;
+    
+    &.active {
+      background: $bg-primary;
+      color: $text-light
+    }
+  }
+}
+
+.custom-data-table {
+  tr {
+    th, td {
+      height: 40px;
+
+      &:first-child {
+        width: 13%
+      }
+
+      &:nth-child(2) {
+        width: 35%
+      }
+
+      &:nth-child(3) {
+        width: 20%
+      }
+      
+      &:last-child {
+        width: 20%
+      }
+    }
+  }
+}
+
+.react-datepicker-wrapper {
+  display: block;
+}
+
+.form-control,
+input {
+  &[readonly],
+  &[readonly]:focus {
+    border-color: transparent;
+    box-shadow: none
+  }
+}

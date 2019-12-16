@@ -1,0 +1,50 @@
+// Colors
+$brown: #752C01;
+$white: #ffffff;
+$yellow: #D4B954;
+$black: #101214;
+$gray: #707070;
+$light-gray: #EEEEEE;
+$dark-gray: #868788;
+$red: #FF0000;
+
+$primary: $brown;
+$light: $white;
+$dark: $black;
+$accent: $yellow;
+$danger: $red;
+
+$text-light: $light;
+$text-gray: $dark-gray;
+$text-accent: $accent;
+$text-primary: $primary;
+$text-body: $dark;
+$text-danger: $red;
+
+$bg-light: $light;
+$bg-primary: $primary;
+$bg-dark: $dark;
+$bg-gray: $light-gray;
+
+$border-gray: $gray;
+$border-light-gray: $light-gray;
+$border-primary: $primary;
+$border-light: $light;
+
+$box-shadow           : 0 1px 5px 0 rgba(0, 0, 0, 0.3);
+$box-shadow-hover     : 0 3px 10px 0 rgba(0, 0, 0, 0.3);
+
+// Sizes
+$navbar-min-height: 60px;
+$brand-width-sm: 50px;
+$brand-width-lg: 100px;
+
+$border-radius: 6px;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+)

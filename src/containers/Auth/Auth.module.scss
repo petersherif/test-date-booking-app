@@ -1,0 +1,84 @@
+@import '../../sass/variables';
+
+.Auth {
+  background-color: $bg-dark;
+  background-attachment: fixed;
+  min-height: 100vh;
+
+  .LoginBg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    opacity: .7;
+  }
+
+  .LoginBox {
+    position: relative;
+    min-height: 100vh;
+    padding: 25px 0;
+    text-align: center;
+    color: $text-light;
+  }
+
+  .LoginHeader {
+    margin-bottom: 60px;
+  }
+
+  .Headline {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  .Logo {
+    margin-bottom: 10px;
+    width: 148px
+  }
+
+  .LogoCaption {
+    font-weight: normal;
+  }
+
+  .LoginBody {
+    margin-bottom: 30px;
+  }
+
+  .LoginForm {
+    width: 70%;
+    max-width: 377px;
+    margin: auto;
+  }
+
+  .errorMsg {
+    background: $bg-light;
+    color: $text-danger;
+    margin: 8px 0;
+    padding: 3px 5px;
+  }
+
+  @media (min-width: map-get($grid-breakpoints, 'md' )) {
+
+    .LoginBg {
+      width: 80%;
+      left: 0;
+      top: 0;
+    }
+
+    .LoginBox {
+      position: absolute;
+      width: 425px;
+      right: 0;
+      background: $bg-light;
+      border-right: 15px solid $border-primary;
+      box-shadow: $box-shadow;
+      color: $text-body;
+    }
+
+    .LoginHeader {
+      margin-bottom: 120px;
+    }
+  }
+}

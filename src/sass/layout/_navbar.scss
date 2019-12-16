@@ -1,0 +1,36 @@
+.navbar {
+  
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: $navbar-min-height;
+  justify-content: unset;
+
+  .navbar-brand {
+    width: $brand-width-sm;
+    padding: 0;
+    position: absolute;
+    left: calc(50% - #{$brand-width-sm} / 2);
+
+    &.lg {
+      width: $brand-width-lg;
+      top: 10px;
+      box-shadow: $box-shadow;
+      left: auto;
+    }
+  }
+
+  .navbar-toggler {
+    border-color: transparent;
+    margin-left: auto;
+  }
+
+  .navbar-nav {
+    .nav-link {
+      transition: all 0.2s ease-in-out;
+
+      &.active {
+        border-bottom: 2px solid $text-light;
+      }
+    }
+  }
+}

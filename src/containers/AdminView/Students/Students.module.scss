@@ -1,0 +1,47 @@
+@import '../../../sass/variables';
+
+.SubjectsList {
+  max-height: 150px;
+  overflow: auto;
+}
+
+.SubjectToSelect {
+  min-width: 150px;
+  text-align: right;
+  padding: 5px 10px 0;
+  position: relative;
+  height: 35px;
+  font-size: 12px;
+
+  .SubjectName {
+    display: inline-block;
+    max-width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  button {
+    margin-right: 10px;
+    float: left;
+    padding-top: 0;
+  }
+
+  @media (min-width: map-get($grid-breakpoints, 'sm')) {
+    font-size: 1rem;
+  }
+}
+
+.SelectedSubject {
+  composes: SubjectToSelect;
+  background: $bg-primary;
+  color: $text-light;
+
+  button {
+    color: $text-light;
+
+    &:hover {
+      color: mix(black, $text-light, 15%)
+    }
+  }
+}

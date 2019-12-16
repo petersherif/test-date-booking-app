@@ -1,0 +1,171 @@
+@import '../../sass/variables';
+
+.DateCard {
+  text-align: left;
+  border: 1px solid $border-light-gray;
+  padding: 18px 20px;
+  border-radius: $border-radius;
+  margin-bottom: 30px;
+  box-shadow: $box-shadow;
+  background: $bg-light;
+  min-height: 233px;
+  position: relative;
+  transition: box-shadow .2s ease-in-out, border-color .2s ease-in-out, background-color .2s ease-in-out, color .2s ease-in-out;
+
+  &:hover {
+    box-shadow: $box-shadow-hover;
+  }
+
+  .Header {
+    height: 42px;
+    margin-bottom: 10px;
+
+    h3, h4, h5 {
+      font-size: 18px;
+    }
+  }
+  
+  .Body {
+    text-align: center;
+    margin-bottom: 10px;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    .Date {
+      display: inline-flex;
+    }
+
+    .Day {
+      font-size: 24px;
+      font-weight: bold;
+      margin-right: 5px;
+    }
+
+    .Time {
+      font-size: 12px;
+    }
+
+    .Place {
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+
+  .Footer {
+    text-align: center;
+
+    .Actions {
+      min-height: 35px;
+      margin-bottom: 8px;
+      
+      .UnavailableText {
+        font-size: 13px;
+        color: $text-primary;
+        margin-bottom: 0;
+        min-height: 20px;
+        padding-top: 10px;
+      }
+      
+      Button {
+        text-decoration: underline;
+        font-size: 14px;
+      }
+    }
+
+    .ProgressBarWrapper {
+      min-height: 20px;
+      margin-top: 4px;
+    }
+  }
+
+  .DeletingSpinner {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0
+  }
+
+  .Exporting {
+    margin: auto;
+    min-width: 70%;
+    
+    p span {
+      font-weight: bold;
+    }
+  }
+
+  @media (min-width: map-get($grid-breakpoints, 'lg' )) {
+    
+    display: flex;
+    align-items: center;
+    min-height: auto;
+
+    .Header {
+      height: 53px;
+
+      h3, h4, h5 {
+        font-size: 22px;
+      }
+    }
+
+    .HeaderBody,
+    .Footer {
+      display: inline-block;
+    }
+    
+    .HeaderBody {
+      width: 70%;
+      min-height: 85px;
+    }
+    
+    .Body {
+      text-align: right;
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 0;
+    }
+
+    .Date {
+      margin-left: 15px;
+    }
+
+    .Footer {
+      width: 30%;
+      margin-right: auto;
+    }
+
+    .DeletingSpinner {
+      position: relative;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}
+
+.DateCardLocked {
+  background: $bg-gray;
+  color: $text-gray;
+  // border-color: $border-gray;
+
+  &:hover {
+    box-shadow: $box-shadow;
+  }
+
+  .StateIcon {
+    position: absolute;
+    width: 13px;
+    height: 17px;
+    right: 14px;
+    top: 14px;
+  }
+}
+
+.DateCardFull {
+  background: rgba($bg-primary, .03);
+  border-color: $border-primary
+}
